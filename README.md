@@ -12,6 +12,6 @@ flowchart LR
     DoCoffee[☕️]
 
     Start --> Coffee
-    Coffee -- Yes --> Code --> End
-    Coffee -- No --> DoCoffee --> Coffee
+    Coffee --Yes--> Code --> End
+    Coffee -. No .-> DoCoffee --> Coffee
 ```
