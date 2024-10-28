@@ -5,7 +5,13 @@
 
 ```mermaid
 flowchart LR
-    A[Start] --> B{Alredy after coffee?}
-    B -->|Yes| C[Coding]
-    B -->|No| D[☕️] --> B
+    Start([Start])
+    End([End])
+    Coffee{Alredy after coffee?}
+    Code[Coding]
+    DoCoffee[☕️]
+
+    Start --> Coffee
+    Coffee -- Yes --> Code --> End
+    Coffee -- No --> DoCoffee --> Coffee
 ```
